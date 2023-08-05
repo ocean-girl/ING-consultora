@@ -1,5 +1,6 @@
 import { ThemeProvider } from "@emotion/react"
 import { customTheme } from "./themeConfig"
+import Layout from "./layout/Layout"
 
 
 function App() {
@@ -7,9 +8,7 @@ function App() {
 
   return (
       <ThemeProvider theme={customTheme}>
-        <h1>
-          App
-        </h1>
+        <Layout />
       </ThemeProvider>
   )
 }
