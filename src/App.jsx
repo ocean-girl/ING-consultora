@@ -1,6 +1,6 @@
 import { ThemeProvider } from "@emotion/react"
 import { customTheme } from "./themeConfig"
-import Layout from "./layout/Layout"
+import Layout from "./components/layout/Layout"
 
 
 function App() {
