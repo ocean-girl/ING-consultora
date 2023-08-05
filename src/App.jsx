@@ -1,14 +1,16 @@
+import { ThemeProvider } from "@emotion/react"
+import { customTheme } from "./themeConfig"
 
 
 function App() {
   
 
   return (
-    
-      <h1>
-        App
-      </h1>
-      
+      <ThemeProvider theme={customTheme}>
+        <h1>
+          App
+        </h1>
+      </ThemeProvider>
   )
 }
 
