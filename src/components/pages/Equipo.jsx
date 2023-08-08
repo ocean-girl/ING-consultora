@@ -11,17 +11,17 @@ const Equipo = () => {
     return (
       <Container maxWidth="xl">
         <div><h1>Equipo</h1></div>
-        <Grid container sx={{ flexGrow: 1 }} spacing={2} justifyContent="center">
-          <Grid item xs={2} >
+        <Grid container sx={{ flexGrow: 1 }} spacing={2} justifyContent="space-around">
+          <Grid item>
             <Cardnj />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item>
             <Cardvd />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item>
             <Cardve />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item>
             <Cardnf />
           </Grid>
         </Grid>
