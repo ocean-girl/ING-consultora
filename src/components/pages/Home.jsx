@@ -1,4 +1,4 @@
-
+import Equipo from "./Equipo"
 
 const Home = () => {
   return (
@@ -6,7 +6,8 @@ const Home = () => {
       <div>Nosotros</div>
       <div>Servicios</div>
       <div>Clientes</div>
-      <div>Contacto</div>
+      <div><Equipo /></div>
+
     </div>
   )
 }
