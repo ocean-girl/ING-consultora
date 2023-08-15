@@ -14,6 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import styles from "./Navbar.module.css"
 
 const drawerWidth = 240;
 const navItems = ['Nosotros', 'Servicios', 'Clientes', 'Equipo', 'Contacto'];
@@ -29,7 +30,10 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        ING
+      <img 
+        src="public/Logo-ING-small.jpg"
+        className={styles.name}
+      />
       </Typography>
       <Divider />
       <List>
@@ -65,7 +69,11 @@ function DrawerAppBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            ING-Consultora
+            <img 
+            src="public/Logo-ING-small.jpg"
+            className={styles.name}
+            
+            ></img>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
@@ -95,9 +103,7 @@ function DrawerAppBar(props) {
       </Box>
       <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
-        <Typography>
-          Ver si se agrega un texto en esta sección
-        </Typography>
+        
       </Box>
     </Box>
   );
