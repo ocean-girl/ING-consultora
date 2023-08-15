@@ -21,6 +21,7 @@ export default function Cardnj() {
           <CardMedia
             component="img"
             height="270"
+            maxWidth= "250"
             image="../public/Nico J.jpg"
             alt="Nicolas Jontin"
           />

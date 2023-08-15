@@ -13,13 +13,13 @@ const Equipo = () => {
         <div><h1>Equipo</h1></div>
         <Grid container sx={{ flexGrow: 1 }} spacing={2} justifyContent="space-around">
           <Grid item>
+            <Cardve />
+          </Grid>   
+          <Grid item>
             <Cardnj />
           </Grid>
           <Grid item>
             <Cardvd />
-          </Grid>
-          <Grid item>
-            <Cardve />
           </Grid>
           <Grid item>
             <Cardnf />

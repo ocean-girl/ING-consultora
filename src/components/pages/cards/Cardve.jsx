@@ -20,6 +20,7 @@ export default function Cardve() {
           <CardMedia
             component="img"
             height="270"
+            maxWidth= "250"
             image="../public/Valeria Evans.jpg"
             alt="Valeria Evans"
           />
@@ -28,8 +29,8 @@ export default function Cardve() {
               Valeria Evans
             </Typography>
             <Typography variant="body2" color="text.secondary">
-            Diez años de experiencia en implementación y mantenimiento de Sistemas de Gestión de Calidad basados en 
-            la norma ISO 9001. Especialista en mejora continua.
+            Hace más de 15 años acompaño a mis clientes en el proceso de mejora continua, adaptando herramientas de gestión a sus necesidades. 
+            Experta en mejora de procesos en PyMES.
             </Typography>
           </CardContent>
         </CardActionArea>

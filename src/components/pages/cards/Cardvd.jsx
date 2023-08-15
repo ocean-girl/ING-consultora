@@ -20,6 +20,7 @@ export default function Cardvd() {
           <CardMedia
             component="img"
             height="270"
+            maxWidth= "250"
             image="../public/Vane D.jpg"
             alt="Vanesa Damill"
           />
