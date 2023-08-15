@@ -3,7 +3,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import { Box, Typography } from '@mui/material';
-import fondoImagen from "./public/backgroundIng"
+
 
 const styles={
     title: {
@@ -31,7 +31,7 @@ const Nosotros = () => {
         <Typography
             variant="h4"
             textAlign="center"
-            sx={{backgroundSize: 'cover', backgroundImage: fondoImagen}}
+            sx={{backgroundSize: 'cover', backgroundImage: "url(../public/backgroundIng.jpg)"}}
             p={5}
             height="50vh"
             display="flex"
