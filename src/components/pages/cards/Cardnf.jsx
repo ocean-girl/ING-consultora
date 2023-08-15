@@ -20,7 +20,8 @@ export default function Cardnf() {
           <CardMedia
             component="img"
             height="270"
-            image="../public/Noelia F.jpeg"
+            maxWidth= "250"
+            image="../public/Noelia F.jpg"
             alt="Noelia Filippini"
           />
           <CardContent>

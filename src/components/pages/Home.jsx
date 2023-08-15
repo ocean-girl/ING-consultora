@@ -1,7 +1,9 @@
+import Contacto from "./Contacto"
 import Equipo from "./Equipo"
 import Nosotros from "./Nosotros/Nosotros"
 import Servicios from "./Servicios/Servicios"
 import Clientes from "./clientes/Clientes"
+
 
 
 const Home = () => {
@@ -11,7 +13,8 @@ const Home = () => {
       <div><Servicios /></div>
       <div><Clientes /></div>
       <div><Equipo /></div>
-
+      <div><Contacto /></div>
+      
     </div>
   )
 }
