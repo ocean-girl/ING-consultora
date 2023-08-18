@@ -1,4 +1,3 @@
-import React from 'react';
 import Cardnj from './cards/Cardnj';
 import Cardvd from './cards/Cardvd';
 import Cardnf from './cards/Cardnf';

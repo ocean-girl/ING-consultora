@@ -1,7 +1,7 @@
 import Contacto from "./Contacto"
 import Equipo from "./Equipo"
 import Nosotros from "./Nosotros/Nosotros"
-import Servicios from "./Servicios/Servicios"
+import Servicios from "./servicios/ServiciosPresentacional"
 import Clientes from "./clientes/Clientes"
 
 
