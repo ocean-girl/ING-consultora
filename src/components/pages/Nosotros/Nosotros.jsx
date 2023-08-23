@@ -2,7 +2,7 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, CardMedia } from '@mui/material';
 
 
 const styles={
@@ -16,15 +16,21 @@ const styles={
 
 const Nosotros = () => {
   return (
-    <Box sx={{boxShadow: '0px 3px 6px rgba(0, 0, 0, 0.3)'}}>                            
+    <Box sx={{boxShadow: '0px 3px 6px rgba(0, 0, 0, 0.3)'}}>
+        <CardMedia
+            component="img"
+            image="../public/imagenPrincipal.jpg"
+            alt=""
+          />
+                                   
         <Typography 
             variant='h2'
             fontWeight="fontWeightRegular"
             textAlign="center"
             p={3}
-            color="#666666"
+            color="primary.second"
             style={styles.title}
-
+            pt={10}
         >
             NOSOTROS
         </Typography>

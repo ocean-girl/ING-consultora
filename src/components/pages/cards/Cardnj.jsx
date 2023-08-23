@@ -1,5 +1,4 @@
-import React from 'react';
-import { Button, CardActionArea, CardActions, Container } from '@mui/material';
+import { Button, CardActionArea, CardActions } from '@mui/material';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -32,6 +31,8 @@ export default function Cardnj() {
             <Typography variant="body2" color="text.secondary">
             Desde hace más de 15 años me desempeño en Logística formando equipos de trabajos y realizando mejoras de procesos. 
             Facilitador en filosofía Lean.
+            <br/>
+            <br/>
             </Typography>
           </CardContent>
         </CardActionArea>

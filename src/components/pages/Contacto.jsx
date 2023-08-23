@@ -31,7 +31,7 @@ export default function Contacto() {
   };
 
   return (
-    <Container maxWidth="xl">
+    <Container maxWidth="xl" >
       <h1>Contacto</h1>
       <Box
         component="form"

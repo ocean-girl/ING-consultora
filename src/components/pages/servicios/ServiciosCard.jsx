@@ -1,28 +1,28 @@
-import { Card, CardMedia, CardContent, Typography, CardActionArea, IconButton } from '@mui/material';
+import {
+  Card,
+  CardContent,
+  Typography,
+  CardActionArea,
+  IconButton,
+} from "@mui/material";
 
-const ServiceCard = ({ icon, title, description }) => {
+const ServiceCard = ({ Icon, title, description }) => {
   return (
     <Card>
-        <CardActionArea>
-          <IconButton>
-          <CardMedia
-          component="img"  // Cambiado de "svg" a "img"
-          height="140"
-          image={icon}
-          alt=""
-        />
+      <CardActionArea>
+        <IconButton>
+          <Icon />
         </IconButton>
-            
-          <CardContent>
-            <Typography variant="h6" component="div">
+
+        <CardContent>
+          <Typography variant="h6" component="div">
             {title}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
             {description}
-            </Typography>
-          </CardContent>
-          
-          </CardActionArea>
+          </Typography>
+        </CardContent>
+      </CardActionArea>
     </Card>
   );
 };
