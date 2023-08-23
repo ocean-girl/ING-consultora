@@ -1,5 +1,5 @@
-import AssistantPhotoIcon from "@mui/icons-material/AssistantPhoto"; // bandera
-import BarChartIcon from "@mui/icons-material/BarChart"; //gráfico
+//import AssistantPhotoIcon from "@mui/icons-material/AssistantPhoto"; // bandera
+//import BarChartIcon from "@mui/icons-material/BarChart"; //gráfico
 import TrendingUpIcon from "@mui/icons-material/TrendingUp"; // flecha ascendente
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium"; // certificado
 import AddBusinessIcon from "@mui/icons-material/AddBusiness"; // empresa
