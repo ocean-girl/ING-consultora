@@ -31,7 +31,7 @@ export default function Contacto() {
   };
 
   return (
-    <Container maxWidth="xl" >
+    <Container maxWidth="xl">
       <h1>Contacto</h1>
       <Box
         component="form"
@@ -41,6 +41,7 @@ export default function Contacto() {
             display: 'grid',
             gridTemplateColumns: { sm: '1fr 1fr' },
             gap: 2,
+            margin: 2,
           }}
       >
         <TextField
