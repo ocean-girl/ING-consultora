@@ -32,20 +32,29 @@ const Servicios = () => {
         >
           SERVICIOS
         </Typography>
-      </Box>
-      <Box>
-        <Grid container spacing={1} justifyContent="center">
-          {services.map((service, index) => (
-            <Grid item xs={6} sm={4} md={2} key={index} m={4}>
-              <ServiceCard
-                sx={{ backgroundColor: "primary.second" }}
-                Icon={service.icon}
-                title={service.title}
-                description={service.description}
-              />
-            </Grid>
-          ))}
-        </Grid>
+
+        <Box>
+          <Grid container spacing={1} justifyContent="center">
+            {services.map((service, index) => (
+              <Grid
+                item
+                xs={6}
+                sm={4}
+                md={2}
+                key={index}
+                m={4}
+                // sx={{ backgroundColor: "primary.second" }}
+              >
+                <ServiceCard
+                  Icon={service.icon}
+                  title={service.title}
+                  description={service.description}
+                  sx={{ backgroundColor: "primary.second" }}
+                />
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
       </Box>
     </div>
   );
