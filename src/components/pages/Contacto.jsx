@@ -1,6 +1,14 @@
-import { Box, Button, TextField } from "@mui/material";
+import { Box, Button, TextField, Typography } from "@mui/material";
 import { useState } from "react";
-import { Container } from '@mui/material';
+
+const styles = {
+  title: {
+    textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+  },
+  text: {
+    textShadow: "2px 2px 2px rgba(0, 0, 0, 0.3)",
+  },
+};
 
 export default function Contacto() {
   const [email, setEmail] = useState("");
@@ -31,60 +39,69 @@ export default function Contacto() {
   };
 
   return (
-    <Container maxWidth="xl">
-      <h1>Contacto</h1>
-      <Box
-        component="form"
-        onSubmit={onSubmit}
-        autoComplete="off"
-        sx={{
-            display: 'grid',
-            gridTemplateColumns: { sm: '1fr 1fr' },
-            gap: 2,
-            margin: 2,
-          }}
-      >
-        <TextField
-          required
-          id="outlined-required"
-          label="Nombre y Apellido"
-          margin="normal"
-        />
-        <TextField
-          required
-          id="outlined-required"
-          label="Celular"
-          inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
-          margin="normal"
-        />
-        <TextField
-          label="Email"
-          variant="outlined"
-          id="email"
-          type="email"
-          required
-          margin="normal"
-          error={error.error}
-          helperText={error.message}
-          onChange={(e) => setEmail(e.target.value)}
-          value={email}
-        />
-        <TextField
-          id="outlined-multiline-static"
-          label="Comentario"
-          multiline
-          rows={4}
-          margin="normal"
-        />
-        
-        <Button
-          variant="outlined"
-          type="submit"
-          sx={{ mt: 2 }}
+    <div>
+      <Box sx={{ boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.3)" }}>
+        <Typography
+          variant="h2"
+          fontWeight="fontWeightRegular"
+          textAlign="center"
+          p={3}
+          color="#666666"
+          style={styles.title}
+          pt={10}
         >
-          Enviar
-        </Button>
+          CONTACTO
+        </Typography>
+
+        <Box
+          component="form"
+          onSubmit={onSubmit}
+          autoComplete="off"
+          sx={{
+            display: "grid",
+            gridTemplateColumns: { sm: "1fr 1fr" },
+            gap: 2,
+            p: 4,
+          }}
+        >
+          <TextField
+            required
+            id="outlined-required"
+            label="Nombre y Apellido"
+            margin="normal"
+          />
+          <TextField
+            required
+            id="outlined-required"
+            label="Celular"
+            inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
+            margin="normal"
+          />
+          <TextField
+            label="Email"
+            variant="outlined"
+            id="email"
+            type="email"
+            required
+            margin="normal"
+            error={error.error}
+            helperText={error.message}
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+          />
+          <TextField
+            id="outlined-multiline-static"
+            label="Comentario"
+            multiline
+            rows={4}
+            margin="normal"
+          />
+
+          <Button variant="outlined" type="submit" sx={{ mt: 2 }}>
+            Enviar
+          </Button>
+        </Box>
       </Box>
-    </Container>
+    </div>
   );
 }
