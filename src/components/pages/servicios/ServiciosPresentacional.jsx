@@ -38,6 +38,7 @@ const Servicios = () => {
           {services.map((service, index) => (
             <Grid item xs={6} sm={4} md={2} key={index} m={4}>
               <ServiceCard
+                sx={{ backgroundColor: "primary.second" }}
                 Icon={service.icon}
                 title={service.title}
                 description={service.description}
