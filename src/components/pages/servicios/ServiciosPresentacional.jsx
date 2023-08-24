@@ -20,13 +20,18 @@ const styles = {
 const Servicios = () => {
   return (
     <div>
-      <Box sx={{ boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.3)" }}>
+      <Box
+        sx={{
+          boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.3)",
+          backgroundColor: "primary.second",
+        }}
+      >
         <Typography
           variant="h2"
           fontWeight="fontWeightRegular"
           textAlign="center"
           p={3}
-          color="#666666"
+          color="#ffffff"
           style={styles.title}
           pt={10}
         >
