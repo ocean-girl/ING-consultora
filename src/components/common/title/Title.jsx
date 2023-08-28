@@ -19,7 +19,7 @@ const Title = ({ title }) => {
         variant="h2"
         fontWeight="fontWeightRegular"
         textAlign="center"
-        style={styles.title}
+        sx={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }}
         p={3}
         color="primary.second"
         pt={10}
