@@ -49,8 +49,8 @@ const Gallery = () => {
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <Paper
                   sx={{
-                    width: "100%",
-                    paddingTop: "100%", // Mantendrá el aspect ratio de 1:1
+                    width: "50%",
+                    paddingTop: "50%", // Mantendrá el aspect ratio de 1:1
                     position: "relative",
                     overflow: "hidden",
                   }}

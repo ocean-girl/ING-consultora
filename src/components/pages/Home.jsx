@@ -2,7 +2,7 @@ import Contacto from "./Contacto"
 import Equipo from "./Equipo"
 import Nosotros from "./Nosotros/Nosotros"
 import Servicios from "./servicios/ServiciosPresentacional"
-import Clientes from "./clientes/Clientes"
+import Cliente from "./clientes/Cliente"
 
 
 
@@ -11,7 +11,7 @@ const Home = () => {
     <div>
       <div><Nosotros /></div>
       <div><Servicios /></div>
-      <div><Clientes /></div>
+      <div><Cliente /></div>
       <div><Equipo /></div>
       <div><Contacto /></div>
       

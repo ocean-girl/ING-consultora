@@ -23,7 +23,10 @@ const Equipo = () => {
     <Box
       sx={{
         boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.3)",
-        backgroundColor: "primary.second",
+        backgroundColor: (theme) =>
+          theme.palette.mode === "light"
+            ? theme.palette.grey[200]
+            : theme.palette.grey[800],
       }}
     >
       <Typography
@@ -41,8 +44,8 @@ const Equipo = () => {
         container
         sx={{ flexGrow: 1 }}
         pb={6}
-        pl={20}
-        pr={20}
+        pl={12}
+        pr={12}
         spacing={2}
         justifyContent="space-around"
       >
