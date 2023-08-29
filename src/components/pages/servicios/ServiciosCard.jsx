@@ -5,13 +5,39 @@ import {
   CardActionArea,
   IconButton,
 } from "@mui/material";
+import { useState } from "react";
 
 const ServiceCard = ({ Icon, title, description }) => {
+  const [hovered, setHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(false);
+  };
+
   return (
-    <Card sx={{ backgroundColor: "secondary.second" }}>
-      <CardActionArea>
-        <IconButton color="primary.main">
-          <Icon color="primary.main" />
+    <Card
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      sx={{
+        backgroundColor: "secondary.second",
+        maxWidth: 600,
+        transition: "transform 0.3s", // Animación suave del tamaño
+        transform: hovered ? "scale(1.2)" : "scale(1)", // Cambia el tamaño al hacer hover
+      }}
+    >
+      <CardActionArea
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "flex-start",
+        }}
+      >
+        <IconButton color="primary.main" sx={{ top: 0 }}>
+          <Icon color="primary.main" sx={{ fontSize: "50px" }} />
         </IconButton>
 
         <CardContent>
@@ -23,9 +49,11 @@ const ServiceCard = ({ Icon, title, description }) => {
           >
             {title}
           </Typography>
-          <Typography variant="body2" color="prymary.second">
-            {description}
-          </Typography>
+          {hovered && (
+            <Typography variant="body2" color="prymary.second">
+              {description}
+            </Typography>
+          )}
         </CardContent>
       </CardActionArea>
     </Card>
