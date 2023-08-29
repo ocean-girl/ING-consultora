@@ -22,6 +22,7 @@ const Nosotros = () => {
         component="img"
         className={styles2.inCircleSwoop}
         image="../public/imagenPrincipal.jpg"
+        sx={{ height: "60vh" }}
         alt=""
       />
 
@@ -42,11 +43,7 @@ const Nosotros = () => {
         color="#ffffff"
         style={styles.text}
       >
-        Nuestra energía se unió para formar esta comunidad, hacia un mismo
-        propósito, <br />
-        crear Conocimiento, Comunicación y Conciencia <br />
-        sobre los procesos (y las personas ver..) de las organizaciones que nos
-        elijan.
+        Propuesta de valor <br />
       </Typography>
     </Box>
   );

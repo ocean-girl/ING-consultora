@@ -21,17 +21,17 @@ const Servicios = () => {
   return (
     <div>
       <Box
-        sx={{
-          boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.3)",
-          backgroundColor: "primary.second",
-        }}
+      // sx={{
+      //   boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.3)",
+      //   backgroundColor: "primary.second",
+      // }}
       >
         <Typography
           variant="h2"
           fontWeight="fontWeightRegular"
           textAlign="center"
           p={3}
-          color="#ffffff"
+          color="#666666"
           style={styles.title}
           pt={10}
         >
@@ -54,7 +54,9 @@ const Servicios = () => {
                   Icon={service.icon}
                   title={service.title}
                   description={service.description}
-                  sx={{ backgroundColor: "primary.second" }}
+                  sx={{
+                    backgroundColor: "primary.second",
+                  }}
                 />
               </Grid>
             ))}

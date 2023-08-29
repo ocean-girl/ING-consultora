@@ -23,34 +23,40 @@ const ServiceCard = ({ Icon, title, description }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       sx={{
-        backgroundColor: "secondary.second",
+        backgroundColor: "primary.second",
         maxWidth: 600,
-        transition: "transform 0.3s",
+        minHeight: "250px",
+        textAlign: "justify",
+        transition: "transform 0.5s",
+        maxHeight: hovered ? "400px" : "200px",
         transform: hovered ? "scale(1.2)" : "scale(1)",
       }}
     >
       <CardActionArea
         sx={{
           display: "flex",
-          flexDirection: "row",
-          alignItems: "flex-start",
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
-        <IconButton color="primary.main" sx={{ top: 0 }}>
-          <Icon color="primary.main" sx={{ fontSize: "50px" }} />
+        <IconButton sx={{ top: 0 }}>
+          <Icon sx={{ fontSize: "50px", color: "#ffffff", m: 2 }} />
         </IconButton>
 
         <CardContent>
           <Typography
             variant="h6"
             component="div"
-            color="primary.second"
+            color="#ffffff"
             pb={2}
+            sx={{
+              textAlign: "center",
+            }}
           >
             {title}
           </Typography>
           {hovered && (
-            <Typography variant="body2" color="prymary.second">
+            <Typography variant="body2" color="#ffffff">
               {description}
             </Typography>
           )}
