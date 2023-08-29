@@ -4,7 +4,7 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { Box, Typography, CardMedia } from "@mui/material";
 import Title from "../../common/title/Title";
-import styles2 from "./Nosotros.module.css";
+import styled from "./Nosotros.module.css";
 
 const styles = {
   title: {
@@ -17,10 +17,14 @@ const styles = {
 
 const Nosotros = () => {
   return (
-    <Box sx={{ boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.3)" }}>
+    <Box
+      sx={{
+        boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.3)",
+      }}
+    >
       <CardMedia
         component="img"
-        className={styles2.inCircleSwoop}
+        className={styled.inCircleSwoop}
         image="../public/imagenPrincipal.jpg"
         sx={{ height: "60vh" }}
         alt=""

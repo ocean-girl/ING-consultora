@@ -23,19 +23,19 @@ const Equipo = () => {
     <Box
       sx={{
         boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.3)",
-        backgroundColor: "primary.second",
+        backgroundImage: "url(../public/background-web-equipo2.jpg)",
+        backgroundSize: "cover",
       }}
     >
       <Typography
         variant="h2"
         fontWeight="fontWeightRegular"
         textAlign="center"
-        p={3}
+        p={6}
         color="#ffffff"
         style={styles.title}
-        pt={10}
       >
-        EQUIPO
+        NUESTRO EQUIPO
       </Typography>
       <Grid
         container
