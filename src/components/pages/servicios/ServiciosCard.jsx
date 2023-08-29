@@ -3,29 +3,74 @@ import {
   CardContent,
   Typography,
   CardActionArea,
-  IconButton,
+  // IconButton,
 } from "@mui/material";
+import { useState } from "react";
 
 const ServiceCard = ({ Icon, title, description }) => {
+  const [hovered, setHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(false);
+  };
+
   return (
-    <Card sx={{ backgroundColor: "secondary.second" }}>
-      <CardActionArea>
-        <IconButton color="primary.main">
-          <Icon color="primary.main" />
-        </IconButton>
+    <Card
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      sx={{
+        maxWidth: 600,
+        minHeight: "250px",
+        textAlign: "justify",
+        boxshadow: "0px 3px 5px -1px rgba(0,0,0,0.5)",
+        transition: "transform 0.5s",
+        maxHeight: hovered ? "400px" : "200px",
+        transform: hovered ? "scale(1.2)" : "scale(1)",
+        backgroundColor: hovered ? "#F7F9F8" : "#F7F9F8",
+      }}
+    >
+      <CardActionArea
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          pt: "20px",
+        }}
+      >
+        <img
+          src={Icon}
+          alt="grafico"
+          style={{ fontSize: "10px", m: 2, width: "30%" }}
+        />
+        {/* <IconButton sx={{ top: 0 }}>
+          <Icon sx={{ fontSize: "50px", color: "#666666", m: 2 }} />
+        </IconButton> */}
 
         <CardContent>
           <Typography
             variant="h6"
             component="div"
-            color="primary.second"
+            color="#666666"
             pb={2}
+            sx={{
+              textAlign: "center",
+              color: hovered ? "#000000" : "primary.second",
+            }}
           >
             {title}
           </Typography>
-          <Typography variant="body2" color="prymary.second">
-            {description}
-          </Typography>
+          {hovered && (
+            <Typography
+              variant="body2"
+              sx={{ color: hovered ? "#000000" : "primary.second" }}
+            >
+              {description}
+            </Typography>
+          )}
         </CardContent>
       </CardActionArea>
     </Card>

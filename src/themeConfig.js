@@ -11,7 +11,7 @@ export const customTheme = createTheme({
       second: "#B4DEBE",
     },
     tercery: {
-      main: "F0F0D8",
+      main: "#F0F0D8",
     },
   },
 });

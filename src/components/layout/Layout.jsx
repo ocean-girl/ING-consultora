@@ -1,20 +1,22 @@
-import Navbar from "./navbar/Navbar"
-import Footer from "./footer/Footer"
-import Home from "../pages/Home"
-
-
+import Navbar from "./navbar/Navbar";
+import Footer from "./footer/Footer";
+import Home from "../pages/Home";
 
 const Layout = () => {
-    return (
+  return (
+    <div>
       <div>
-          <div><Navbar /></div>
-  
-          <div><Home /></div>
-  
-          <div><Footer /></div>
-      
-      
+        <Navbar />
       </div>
-    )
-  }
-export default Layout
+
+      <div>
+        <Home />
+      </div>
+
+      <div>
+        <Footer />
+      </div>
+    </div>
+  );
+};
+export default Layout;
