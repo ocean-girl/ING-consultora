@@ -25,8 +25,8 @@ const ServiceCard = ({ Icon, title, description }) => {
       sx={{
         backgroundColor: "secondary.second",
         maxWidth: 600,
-        transition: "transform 0.3s", // Animación suave del tamaño
-        transform: hovered ? "scale(1.2)" : "scale(1)", // Cambia el tamaño al hacer hover
+        transition: "transform 0.3s",
+        transform: hovered ? "scale(1.2)" : "scale(1)",
       }}
     >
       <CardActionArea
