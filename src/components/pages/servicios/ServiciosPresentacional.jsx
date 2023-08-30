@@ -24,7 +24,7 @@ const Servicios = () => {
         sx={{
           backgroundImage: "url(../public/background-web-servicios2.jpg)",
           backgroundSize: "cover",
-          height: "65vh",
+          //height: "65vh",
           boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.3)",
         }}
       >

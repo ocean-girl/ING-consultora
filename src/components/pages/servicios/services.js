@@ -5,7 +5,7 @@
 //import AddBusinessIcon from "@mui/icons-material/AddBusiness"; // empresa
 //import AutoFixHighIcon from "@mui/icons-material/AutoFixHigh"; // varita
 //import graficoFormal from "../../../../public/graficoFormal.png";
-import graficoInformal from "../../../../public/graficoInformal2.png";
+import graficoInformal from "../../../../public/graficoInformal3.png";
 import certificado from "../../../../public/certificado.png";
 import marketing from "../../../../public/marketing.png";
 import emprendedores from "../../../../public/emprendedores.png";
