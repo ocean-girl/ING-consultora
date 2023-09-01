@@ -2,19 +2,11 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import { Container, Typography } from "@mui/material";
+import { Container } from "@mui/material";
 //import { images } from "./images";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
-const styles = {
-  title: {
-    textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
-  },
-  text: {
-    textShadow: "2px 2px 2px rgba(0, 0, 0, 0.3)",
-  },
-};
+import Title from "../../common/title/Title";
 
 const responsive = {
   superLargeDesktop: {
@@ -48,17 +40,7 @@ export default function MyImageCarousel() {
           alignItems: "center",
         }}
       >
-        <Typography
-          variant="h2"
-          fontWeight="fontWeightRegular"
-          textAlign="center"
-          p={3}
-          color="#666666"
-          style={styles.title}
-          pt={10}
-        >
-          CLIENTES
-        </Typography>
+        <Title title={"CLIENTES"} />
 
         <Carousel
           draggable={false}
