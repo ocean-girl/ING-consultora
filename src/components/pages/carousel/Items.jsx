@@ -5,9 +5,12 @@ function Item({ item }) {
     <Paper
       sx={{
         backgroundAttachment: "scroll",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        display: { minHeight: "calc(10vh  - 260px)" },
+
+        backgroundPosition: "0 0",
+        backgroundSize: "contain",
+        minHeight: "70vh",
+        backgroundImage: `url(${item.img})`,
+        backgroundRepeat: "repeat-x",
       }}
     >
       <img
@@ -15,10 +18,12 @@ function Item({ item }) {
         alt={item.id}
         style={{
           width: "100%",
+          height: "auto",
           backgroundAttachment: "scroll",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          display: { minHeight: "calc(50vh  - 260px)" },
+          backgroundPosition: "0 0",
+          backgroundSize: "contain",
+          backgroundRepeat: "repeat-x",
+          display: "none",
         }}
       />
 
