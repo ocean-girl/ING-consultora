@@ -15,8 +15,8 @@ const Servicios = () => {
         sx={{
           backgroundImage: "url(../public/background-web-servicios2.jpg)",
           backgroundSize: "cover",
-          height: "80vh",
           boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.3)",
+          height: (break) => 
         }}
       >
         <Title title={"SERVICIOS"} />
