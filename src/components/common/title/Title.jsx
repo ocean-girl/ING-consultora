@@ -10,7 +10,7 @@
 // }
 
 import { Box, Typography } from "@mui/material";
-import styles from "./Title.module.css";
+import "./Title.css";
 
 const Title = ({ title }) => {
   return (

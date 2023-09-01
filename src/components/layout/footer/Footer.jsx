@@ -25,7 +25,8 @@ export default function Footer() {
               Nosotros
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Nos dedicamos a sumar Conocimiento, fomentar Comunicacion y crear Conciencia.
+              Nos dedicamos a sumar Conocimiento, fomentar Comunicacion y crear
+              Conciencia.
             </Typography>
           </Grid>
           <Grid item xs={12} sm={4}>
@@ -33,7 +34,7 @@ export default function Footer() {
               Contactenos
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Buenos Aires / Chubut - Argentina
+              Buenos Aires / Chubut - Argentina / LATAM
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Email: info@ing-consultora.com.ar

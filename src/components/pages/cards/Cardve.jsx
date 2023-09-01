@@ -20,7 +20,6 @@ export default function Cardve() {
         <CardMedia
           component="img"
           height="270"
-          maxWidth="250"
           image="../public/Foto Vale.jpg"
           alt="Valeria Evans"
         />

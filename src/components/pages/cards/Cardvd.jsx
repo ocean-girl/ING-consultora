@@ -20,7 +20,6 @@ export default function Cardvd() {
         <CardMedia
           component="img"
           height="270"
-          maxWidth="250"
           image="../public/Foto Vane.jpg"
           alt="Vanesa Damill"
         />
@@ -29,9 +28,9 @@ export default function Cardvd() {
             Vanesa Damill
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Diez años de experiencia en implementación y mantenimiento de
-            Sistemas de Gestión de Calidad basados en la norma ISO 9001.
-            Especialista en mejora continua.
+            Desde hace 10 años realizo implementación de Sistemas de Gestión
+            basados en la Norma ISO 9001. Especialista en mejora continua
+            aplicando el modelo TPS (Sistema de Producción Toyota)
           </Typography>
         </CardContent>
       </CardActionArea>

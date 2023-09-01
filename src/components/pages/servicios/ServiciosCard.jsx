@@ -28,7 +28,7 @@ const ServiceCard = ({ Icon, title, description }) => {
         textAlign: "justify",
         boxshadow: "0px 3px 5px -1px rgba(0,0,0,0.5)",
         transition: "transform 0.5s",
-        maxHeight: hovered ? "400px" : "200px",
+        maxHeight: hovered ? "500px" : "200px",
         transform: hovered ? "scale(1.2)" : "scale(1)",
         backgroundColor: hovered ? "#F7F9F8" : "#F7F9F8",
       }}
