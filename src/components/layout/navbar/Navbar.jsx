@@ -20,6 +20,7 @@ import Contacto from "../../pages/Contacto";
 import Servicios from "../../pages/servicios/ServiciosPresentacional";
 import Equipo from "../../pages/Equipo";
 import Clientex from "../../pages/clientes/Clientex";
+import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = [
@@ -103,7 +104,12 @@ function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item.id} sx={{ color: "#fff" }}>
+              <Button
+                key={item.id}
+                sx={{ color: "#fff" }}
+                component={Link}
+                to={item.Element}
+              >
                 {item.title}
               </Button>
             ))}
