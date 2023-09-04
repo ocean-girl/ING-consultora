@@ -1,25 +1,26 @@
-// const styles = {
-//   title: {
-//     textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
-//   },
-// };
-//animación de titulo
-// .tracking-in-contract-bck {
-// 	-webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-// 	        animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-// }
-
 import { Box, Typography } from "@mui/material";
 import "./Title.css";
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 const Title = ({ title }) => {
+  const [isTriggered, setIsTriggered] = useState(false);
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      setIsTriggered(true);
+    }
+  }, [inView]);
+
   return (
-    <Box>
+    <Box ref={ref}>
       <Typography
         variant="h2"
         fontWeight="fontWeightRegular"
         textAlign="center"
         sx={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }}
+        className={`${isTriggered ? "tracking-in-contract-bck" : ""}`}
         p={3}
         color="primary.second"
         pt={10}

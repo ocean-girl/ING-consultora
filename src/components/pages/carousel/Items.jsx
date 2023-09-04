@@ -5,12 +5,13 @@ function Item({ item }) {
   return (
     <Paper
       sx={{
-        backgroundRepeat: "repeat-x",
-        backgroundPosition: "0 0",
-        minHeight: "70vh",
+        //display: { xs: "none", sm: "block" },
+        backgroundRepeat: { xs: "no-repeat", lg: "repeat-x" },
+        backgroundPosition: { xs: "center", lg: "0 0 " },
+        minHeight: { xs: "50vh", /*md: "40vh",*/ lg: "40vh" },
         backgroundImage: `url(${item.img})`,
         backgroundAttachment: "fixed",
-        backgroundSize: "50% auto",
+        backgroundSize: { xs: "cover", lg: "50% auto" },
         position: "relative",
       }}
     >
@@ -20,6 +21,7 @@ function Item({ item }) {
         style={{
           maxWidth: "100%",
           height: "auto",
+
           display: "none",
         }}
       />
@@ -32,10 +34,12 @@ function Item({ item }) {
           padding: "5%",
           background: "rgba(0, 0, 0, 0.7)",
           backgroundAttachment: "fixed",
-          backgroundSize: "2%",
-          minHeight: "70vh",
+          backgroundSize: { xs: "100%", lg: "50%" },
+          //minHeight: "70vh",
+          height: "50%",
           top: 0,
-          width: "50%",
+
+          width: { xs: "100%", lg: "50%" },
           left: "0%",
           overflow: "hidden",
           clipPath: "var(--circle-top-right-out)",

@@ -18,7 +18,7 @@ import styles from "./Navbar.module.css";
 import Nosotros from "../../pages/Nosotros/Nosotros";
 import Contacto from "../../pages/Contacto";
 import Servicios from "../../pages/servicios/ServiciosPresentacional";
-import Equipo from "../../pages/Equipo";
+import Equipo from "../../pages/equipo/Equipo";
 import Clientex from "../../pages/clientes/Clientex";
 import { Link } from "react-router-dom";
 

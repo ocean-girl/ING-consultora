@@ -8,22 +8,28 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { Box, Typography } from "@mui/material";
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
-const styles = {
-  title: {
-    textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
-  },
-  text: {
-    textShadow: "2px 2px 2px rgba(0, 0, 0, 0.3)",
-  },
-};
 const Equipo = () => {
+  const [isTriggered, setIsTriggered] = useState(false);
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      setIsTriggered(true);
+    }
+  }, [inView]);
+
   return (
     <Box
+      Box
+      ref={ref}
       sx={{
         boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.3)",
-        backgroundImage: "url(../public/background-web-equipo2.jpg)",
+        backgroundImage: "url(./public/background-web-equipo2.jpg)",
         backgroundSize: "cover",
+        backgroundAttachment: "fixed",
       }}
     >
       <Typography
@@ -32,7 +38,8 @@ const Equipo = () => {
         textAlign="center"
         p={6}
         color="#ffffff"
-        style={styles.title}
+        sx={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }}
+        className={`${isTriggered ? "tracking-in-contract-bck" : ""}`}
       >
         NUESTRO EQUIPO
       </Typography>

@@ -1,4 +1,4 @@
-import Equipo from "../components/pages/Equipo";
+import Equipo from "../components/pages/equipo/Equipo";
 import Nosotros from "../components/pages/Nosotros/Nosotros";
 import Servicios from "../components/pages/servicios/ServiciosPresentacional";
 import Clientex from "../components/pages/clientes/Clientex";
