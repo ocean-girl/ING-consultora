@@ -5,13 +5,12 @@ function Item({ item }) {
   return (
     <Paper
       sx={{
+        backgroundSize: { xs: "cover", lg: "50% auto" },
         backgroundRepeat: { xs: "no-repeat", lg: "repeat-x" },
         backgroundPosition: { xs: "center", lg: "0 0 " },
         minHeight: { xs: "30vh", lg: "40vh" },
         backgroundImage: `url(${item.img})`,
         backgroundAttachment: "fixed",
-        //
-        backgroundSize: { xs: "contain", lg: "50% auto" },
         position: "relative",
         overflow: "hidden",
       }}
@@ -22,7 +21,6 @@ function Item({ item }) {
         style={{
           maxWidth: "100%",
           height: "auto",
-
           display: "none",
         }}
       />
@@ -34,18 +32,21 @@ function Item({ item }) {
           position: "absolute",
           padding: "5%",
           background: "rgba(0, 0, 0, 0.7)",
-          // backgroundAttachment: "fixed",
-          // backgroundSize: { xs: "contain", lg: "50% auto" },
-          //minHeight: "30vh",
-          //height: "50%",
+          backgroundAttachment: "fixed",
+          backgroundSize: { xs: "contain", lg: "50% auto" },
+          minHeight: { xs: "30vh", lg: "40vh" },
+          height: "100%",
           top: 0,
           width: { xs: "100%", lg: "50%" },
           left: "0%",
           zIndex: 1,
           overflow: "hidden",
-          // clipPath: "var(--circle-top-right-out)",
-          // animation: "in-circle-swoop 5s forwards",
+          clipPath: "var(--circle-top-right-out)",
+          animation: "in-circle-swoop 5s forwards",
           fontSize: "1.5 rem",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
           lineHeight: "1.5",
         }}
       >
