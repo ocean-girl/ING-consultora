@@ -5,9 +5,9 @@ function Item({ item }) {
   return (
     <Paper
       sx={{
-        backgroundSize: { xs: "cover", lg: "50% auto" },
+        backgroundSize: { xs: "570px", lg: "50% auto" },
         backgroundRepeat: { xs: "no-repeat", lg: "repeat-x" },
-        backgroundPosition: { xs: "center", lg: "0 0 " },
+        backgroundPosition: { xs: "top", lg: "0 0 " },
         minHeight: { xs: "30vh", lg: "40vh" },
         backgroundImage: `url(${item.img})`,
         backgroundAttachment: "fixed",
