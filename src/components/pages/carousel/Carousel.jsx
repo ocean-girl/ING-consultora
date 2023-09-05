@@ -4,7 +4,7 @@ import Item from "./Items";
 
 function CarouselIntro() {
   return (
-    <Carousel>
+    <Carousel interval={8000}>
       {imagesCarousel.map((item) => (
         <Item key={item.id} item={item} />
       ))}

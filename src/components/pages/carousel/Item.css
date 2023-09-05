@@ -7,6 +7,20 @@
   animation: in-circle-swoop 5s forwards;
   /*clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);*/
   clip-path: var(--circle-top-right-out);
+  color: white;
+  position: absolute;
+  padding: 5%;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-attachment: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  font-size: 1.5 rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 2;
 }
 
 @keyframes in-circle-swoop {
@@ -21,4 +35,18 @@
 [transition-style="in:custom:circle-swoop"] {
   --transition__duration: 5s;
   animation-name: in-circle-swoop;
+}
+
+@media (min-width: 900px) {
+  .tear-drop {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tear-drop {
+    font-size: 30px;
+    width: 50%;
+  }
 }
