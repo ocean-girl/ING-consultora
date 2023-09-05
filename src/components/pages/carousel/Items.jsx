@@ -5,9 +5,9 @@ function Item({ item }) {
   return (
     <Paper
       sx={{
-        backgroundSize: { xs: "570px", lg: "50% auto" },
+        backgroundSize: { xs: "570px", sm: "1200px", lg: "50% auto" },
         backgroundRepeat: { xs: "no-repeat", lg: "repeat-x" },
-        backgroundPosition: { xs: "top", lg: "0 0 " },
+        backgroundPosition: { xs: "top", sm: "top", lg: "0 0 " },
         minHeight: { xs: "30vh", lg: "40vh" },
         backgroundImage: `url(${item.img})`,
         backgroundAttachment: "fixed",
@@ -33,14 +33,14 @@ function Item({ item }) {
           padding: "5%",
           background: "rgba(0, 0, 0, 0.7)",
           backgroundAttachment: "fixed",
-          backgroundSize: { xs: "contain", lg: "50% auto" },
+          backgroundSize: { xs: "contain", md: "50%" },
           minHeight: { xs: "30vh", lg: "40vh" },
           height: "100%",
           top: 0,
-          width: { xs: "100%", lg: "50%" },
+          width: { xs: "100%", md: "50%" },
           left: "0%",
-          zIndex: 1,
-          overflow: "hidden",
+
+          // overflow: "hidden",
           clipPath: "var(--circle-top-right-out)",
           animation: "in-circle-swoop 5s forwards",
           fontSize: "1.5 rem",
