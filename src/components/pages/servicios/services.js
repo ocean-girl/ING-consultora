@@ -21,7 +21,7 @@ export const services = [
     icon: certificado,
     title: "Implementación y Certificación de Normas Internacionales",
     description:
-      "Implementamos sistemas de gestión en: Calidad, Medio ambiente, Salud y seguridad en el trabajo, Inocuidad alimentaria, Responsabilidad social empresarial y compliance",
+      "Implementamos sistemas de gestión en: Calidad, Medio ambiente, Salud y seguridad en el trabajo, Inocuidad alimentaria, Responsabilidad social empresarial y compliance.",
   },
   {
     icon: marketing,
