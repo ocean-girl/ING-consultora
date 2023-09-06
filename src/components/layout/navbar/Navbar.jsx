@@ -27,26 +27,31 @@ const navItems = [
   {
     id: "1",
     title: "Nosotros",
+    path: "/Nosotros",
     Element: Nosotros,
   },
   {
     id: "2",
     title: "Servicios",
+    path: "/Servicios",
     Element: Servicios,
   },
   {
     id: "3",
     title: "Clientes",
+    path: "/Clientes",
     Element: Clientex,
   },
   {
     id: "4",
     title: "Equipo",
+    path: "/Equipo",
     Element: Equipo,
   },
   {
     id: "5",
     title: "Contacto",
+    path: "/Contacto",
     Element: Contacto,
   },
   //'Nosotros', 'Servicios', 'Clientes', 'Equipo', 'Contacto'
@@ -108,7 +113,7 @@ function DrawerAppBar(props) {
                 key={item.id}
                 sx={{ color: "#fff" }}
                 component={Link}
-                to={item.Element}
+                to={item.path}
               >
                 {item.title}
               </Button>
@@ -152,12 +157,3 @@ DrawerAppBar.propTypes = {
 };
 
 export default DrawerAppBar;
-
-/*
-const Navbar = () => {
-  return (
-    <div>Navbar</div>
-  )
-}
-
-export default Navbar*/

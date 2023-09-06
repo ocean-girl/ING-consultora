@@ -7,27 +7,27 @@ import Contacto from "../components/pages/Contacto";
 export const menuRoutes = [
   {
     id: "Nosotros",
-    path: "/",
-    Element: Nosotros,
+    path: "/nosotros",
+    Component: Nosotros,
   },
   {
     id: "Servicios",
-    path: "/Servicios",
-    Element: Servicios,
+    path: "/servicios",
+    Component: Servicios,
   },
   {
     id: "Clientes",
-    path: "/Clientes",
-    Element: Clientex,
+    path: "/clientes",
+    Component: Clientex,
   },
   {
     id: "Equipo",
-    path: "/Equipo",
-    Element: Equipo,
+    path: "/equipo",
+    Component: Equipo,
   },
   {
     id: "Contactos",
-    path: "/Contacto",
-    Element: Contacto,
+    path: "/contacto",
+    Component: Contacto,
   },
 ];
