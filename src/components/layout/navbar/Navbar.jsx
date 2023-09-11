@@ -21,9 +21,16 @@ import Servicios from "../../pages/servicios/ServiciosPresentacional";
 import Equipo from "../../pages/equipo/Equipo";
 import Clientex from "../../pages/clientes/Clientex";
 import { Link } from "react-router-dom";
+import Home from "../../pages/Home";
+import { useNavigate } from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = [
+  {
+    id: "0",
+    path: "/",
+    Element: Home,
+  },
   {
     id: "1",
     title: "Nosotros",
@@ -54,12 +61,12 @@ const navItems = [
     path: "/Contacto",
     Element: Contacto,
   },
-  //'Nosotros', 'Servicios', 'Clientes', 'Equipo', 'Contacto'
 ];
 
 function DrawerAppBar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const navigate = useNavigate();
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -68,13 +75,21 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        <img src="public/Logo-ING-small.jpg" className={styles.name} />
+        <img
+          src="public/Logo-ING-small.jpg"
+          className={styles.name}
+          onClick={() => navigate("/")}
+        />
       </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
           <ListItem key={item.id} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton
+              sx={{ textAlign: "center" }}
+              component={Link}
+              to={item.path}
+            >
               <ListItemText primary={item.title} />
             </ListItemButton>
           </ListItem>
@@ -105,7 +120,11 @@ function DrawerAppBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            <img src="public/Logo-ING-small.jpg" className={styles.name}></img>
+            <img
+              src="public/Logo-ING-small.jpg"
+              className={styles.name}
+              onClick={() => navigate("/")}
+            ></img>
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (

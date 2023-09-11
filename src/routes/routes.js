@@ -3,31 +3,37 @@ import Nosotros from "../components/pages/Nosotros/Nosotros";
 import Servicios from "../components/pages/servicios/ServiciosPresentacional";
 import Clientex from "../components/pages/clientes/Clientex";
 import Contacto from "../components/pages/Contacto";
+import Home from "../components/pages/Home";
 
 export const menuRoutes = [
   {
+    id: "home",
+    path: "/",
+    Element: Home,
+  },
+  {
     id: "Nosotros",
-    path: "/nosotros",
-    Component: Nosotros,
+    path: "/Nosotros",
+    Element: Nosotros,
   },
   {
     id: "Servicios",
-    path: "/servicios",
-    Component: Servicios,
+    path: "/Servicios",
+    Element: Servicios,
   },
   {
     id: "Clientes",
-    path: "/clientes",
-    Component: Clientex,
+    path: "/Clientes",
+    Element: Clientex,
   },
   {
     id: "Equipo",
-    path: "/equipo",
-    Component: Equipo,
+    path: "/Equipo",
+    Element: Equipo,
   },
   {
-    id: "Contactos",
-    path: "/contacto",
-    Component: Contacto,
+    id: "Contacto",
+    path: "/Contacto",
+    Element: Contacto,
   },
 ];

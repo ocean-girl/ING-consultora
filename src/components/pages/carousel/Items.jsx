@@ -28,26 +28,9 @@ function Item({ item }) {
       <div
         className="tear-drop"
         style={{
-          // color: "white",
-          // position: "absolute",
-          // padding: "5%",
-          // background: "rgba(0, 0, 0, 0.7)",
-          // backgroundAttachment: "fixed",
           backgroundSize: { xs: "contain", md: "50%" },
           minHeight: { xs: "30vh", lg: "40vh" },
-          // height: "100%",
-          // top: 0,
           width: { xs: "100%", md: "50%" },
-          // left: "0%",
-
-          // overflow: "hidden",
-          // clipPath: "var(--circle-top-right-out)",
-          // animation: "in-circle-swoop 5s forwards",
-          // fontSize: "1.5 rem",
-          // display: "flex",
-          // alignItems: "center",
-          // justifyContent: "center",
-          // lineHeight: "2",
         }}
       >
         {item.description}

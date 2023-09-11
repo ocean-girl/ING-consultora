@@ -46,9 +46,6 @@ const ServiceCard = ({ Icon, title, description }) => {
           alt="grafico"
           style={{ fontSize: "10px", m: 2, width: "30%" }}
         />
-        {/* <IconButton sx={{ top: 0 }}>
-          <Icon sx={{ fontSize: "50px", color: "#666666", m: 2 }} />
-        </IconButton> */}
 
         <CardContent>
           <Typography
@@ -66,7 +63,10 @@ const ServiceCard = ({ Icon, title, description }) => {
           {hovered && (
             <Typography
               variant="body2"
-              sx={{ color: hovered ? "#000000" : "primary.second" }}
+              sx={{
+                color: hovered ? "#000000" : "primary.second",
+                textAlign: { xs: "center", sm: "justify" },
+              }}
             >
               {description}
             </Typography>
