@@ -16,7 +16,7 @@ const Servicios = () => {
           backgroundImage: "url(../public/background-web-servicios2.jpg)",
           backgroundSize: "cover",
           boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.3)",
-          minHeight: "65vh",
+          minHeight: "115vh",
         }}
       >
         <Title title={"SERVICIOS"} />
