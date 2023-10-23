@@ -4,6 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Nicolas from "../src/assets/Nico J.jpg";
 
 export default function Cardnj() {
   return (
@@ -20,7 +21,7 @@ export default function Cardnj() {
         <CardMedia
           component="img"
           height="270"
-          image="../src/assets/Nico J.jpg"
+          image={Nicolas}
           alt="Nicolas Jontin"
         />
         <CardContent>
