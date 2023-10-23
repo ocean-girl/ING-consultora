@@ -1,42 +1,42 @@
 export const images = [
   {
-    img: "./public/ddm250.jpg",
+    img: "./src/assets/ddm250.jpg",
     title: "DDM Interaction Agency",
   },
   {
-    img: "./public/aromitalia250.jpg",
+    img: "./src/assets/aromitalia250.jpg",
     title: "Aromitalia",
   },
   {
-    img: "./public/envairo250.jpg",
+    img: "./src/assets/envairo250.jpg",
     title: "Envairo",
   },
   {
-    img: "./public/entin250.jpg",
+    img: "./src/assets/entin250.jpg",
     title: "Oscar Entin",
   },
   {
-    img: "./public/tecnocer250.jpg",
+    img: "./src/assets/tecnocer250.jpg",
     title: "Tecnoser",
   },
   {
-    img: "./public/sicop250.jpg",
+    img: "./src/assets/sicop250.jpg",
     title: "Espacio Sicop",
   },
   {
-    img: "./public/emeveve250.jpg",
+    img: "./src/assets/emeveve250.jpg",
     title: "Emeveve",
   },
   {
-    img: "./public/SP250.jpg",
+    img: "./src/assets/SP250.jpg",
     title: "SP",
   },
   {
-    img: "./public/dibac250.jpg",
+    img: "./src/assets/dibac250.jpg",
     title: "Bibac",
   },
   {
-    img: "./public/sicamet250.jpg",
+    img: "./src/assets/sicamet250.jpg",
     title: "Sicamet",
   },
 ];

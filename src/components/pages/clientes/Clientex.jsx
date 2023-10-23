@@ -58,25 +58,25 @@ export default function MyImageCarousel() {
           itemClass="carousel-item-padding-50-px"
         >
           <div>
-            <img src="public\aromitalia250.jpg" height={304} alt="" />
+            <img src="src/assets/aromitalia250.jpg" height={304} alt="" />
           </div>
           <div>
-            <img src="public\ddm250.jpg" height={304} alt="" />
+            <img src="src/assets/ddm250.jpg" height={304} alt="" />
           </div>
           <div>
-            <img src="public\emeveve250.jpg" height={304} alt="" />
+            <img src="src/assets/emeveve250.jpg" height={304} alt="" />
           </div>
           <div>
-            <img src="public\entin250.jpg" height={304} alt="" />
+            <img src="src/assets/entin250.jpg" height={304} alt="" />
           </div>
           <div>
-            <img src="public\envairo250.jpg" height={304} alt="" />
+            <img src="src/assets/envairo250.jpg" height={304} alt="" />
           </div>
           <div>
-            <img src="public\sicop250.jpg" height={304} alt="" />
+            <img src="src/assets/sicop250.jpg" height={304} alt="" />
           </div>
           <div>
-            <img src="public\SP250.jpg" height={304} alt="" />
+            <img src="src/assets/SP250.jpg" height={304} alt="" />
           </div>
         </Carousel>
       </Container>

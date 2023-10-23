@@ -20,7 +20,7 @@ export default function Cardve() {
         <CardMedia
           component="img"
           height="270"
-          image="../public/Foto Vale.jpg"
+          image="../src/assets/Foto Vale.jpg"
           alt="Valeria Evans"
         />
         <CardContent>
