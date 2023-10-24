@@ -1,8 +1,53 @@
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// const Footer = () => {
+//   return (
+//     <div className="mx-auto flex w-[90%] max-w-[800px] flex-col items-center gap-8 text-white xsm:items-start">
+//       <a
+//         href="mailto:info@ing-consultora.com.ar"
+//         className=" hover:text- flex w-fit flex-col items-center gap-3 duration-300 hover:text-red  xsm:flex-row xsm:gap-12 "
+//       >
+//         <FontAwesomeIcon icon={faEnvelope} className="h-11" />
+//         <p className="font-text text-xl">info@ing-consultora.com.ar</p>
+//       </a>
+//       <a
+//         href="tel:+549113287-0975"
+//         rel="noreferrer"
+//         aria-label="link to whatsapp"
+//         className=" flex w-fit  flex-col  items-center gap-3 duration-300 hover:text-red xsm:flex-row xsm:gap-12  "
+//       >
+//         <FontAwesomeIcon icon={faPhone} className="h-11" />
+//         <p className="font-text text-xl">+54 911 3287 0975</p>
+//       </a>
+//       <a
+//         href="https://api.whatsapp.com/send?phone=5491132870975"
+//         rel="noreferrer"
+//         target="_blank"
+//         aria-label="link to whatsapp"
+//         className=" flex w-fit  flex-col  items-center gap-3 duration-300 hover:text-red xsm:flex-row xsm:gap-12  "
+//       >
+//         <FontAwesomeIcon icon={faWhatsapp} className="h-12" />
+//         <p className="font-text text-xl">+54 911 3287 0975</p>
+//       </a>
+//     </div>
+//   );
+// };
+
+// export default Footer;
+
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
-import { Facebook, Instagram, Twitter } from "@mui/icons-material";
+import {
+  Facebook,
+  Instagram,
+  Twitter,
+  WhatsApp,
+  Email,
+} from "@mui/icons-material";
 import { Box } from "@mui/material";
 
 export default function Footer() {
@@ -28,19 +73,32 @@ export default function Footer() {
               Conciencia.
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={4} display={"flex"} flexDirection={"column"}>
             <Typography variant="h6" color="text.primary" gutterBottom>
-              Contactenos
+              Contáctenos
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Buenos Aires / Chubut - Argentina / LATAM
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Email: info@ing-consultora.com.ar
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Cel: +54 9 11 3287 0975
-            </Typography>
+            <Link
+              variant="body2"
+              color="text.secondary"
+              href="mailto:info@ing-consultora.com.ar"
+            >
+              <Email />
+              info@ing-consultora.com.ar
+            </Link>
+            <Link
+              variant="body2"
+              color="text.secondary"
+              href="https://api.whatsapp.com/send?phone=5491132870975"
+              rel="noreferrer"
+              target="_blank"
+              aria-label="link to whatsapp"
+            >
+              <WhatsApp />
+              +54 9 11 3287 0975
+            </Link>
           </Grid>
           <Grid item xs={12} sm={4}>
             <Typography variant="h6" color="text.primary" gutterBottom>

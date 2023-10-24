@@ -1,4 +1,4 @@
-import Contacto from "./Contacto";
+//import Contacto from "./Contacto";
 import Equipo from "./equipo/Equipo";
 import Nosotros from "./Nosotros/Nosotros";
 import Servicios from "./servicios/ServiciosPresentacional";
@@ -15,7 +15,7 @@ const Home = () => {
 
       <Equipo />
 
-      <Contacto />
+      {/* <Contacto /> */}
     </div>
   );
 };
