@@ -14,7 +14,7 @@ const Servicios = () => {
     <div>
       <Box
         sx={{
-          backgroundImage: { servicios2 },
+          backgroundImage: servicios2,
           backgroundSize: "cover",
           boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.3)",
           minHeight: "115vh",
