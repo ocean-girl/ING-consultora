@@ -20,7 +20,7 @@ export default function Cardvd() {
         <CardMedia
           component="img"
           height="270"
-          image="../src/assets/Foto Vane.jpg"
+          image="../public/Foto Vane.jpg"
           alt="Vanesa Damill"
         />
         <CardContent>

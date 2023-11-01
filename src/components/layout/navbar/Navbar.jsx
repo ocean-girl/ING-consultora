@@ -121,7 +121,7 @@ function DrawerAppBar(props) {
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
             <img
-              src="src/assets/Logo-ING-small.jpg"
+              src="public/Logo-ING-small.jpg"
               className={styles.name}
               onClick={() => navigate("/")}
             ></img>
