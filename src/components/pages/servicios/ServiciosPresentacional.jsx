@@ -7,13 +7,14 @@ import { Grid } from "@mui/material";
 import ServiceCard from "./ServiciosCard";
 import { services } from "./services";
 import Title from "../../common/title/Title";
+import servicios2 from "../../../../public/background-web-servicios2.jpg";
 
 const Servicios = () => {
   return (
     <div>
       <Box
         sx={{
-          backgroundImage: "url(../public/background-web-servicios2.jpg)",
+          backgroundImage: { servicios2 },
           backgroundSize: "cover",
           boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.3)",
           minHeight: "115vh",
