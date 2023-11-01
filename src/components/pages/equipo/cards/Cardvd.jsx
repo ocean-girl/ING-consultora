@@ -4,6 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import vane from "../../../../../public/Foto Vane.jpg";
 
 export default function Cardvd() {
   return (
@@ -20,7 +21,7 @@ export default function Cardvd() {
         <CardMedia
           component="img"
           height="270"
-          image="../public/Foto Vane.jpg"
+          image={vane}
           alt="Vanesa Damill"
         />
         <CardContent>

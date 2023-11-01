@@ -4,6 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import vale from "../../../../../public/Foto Vale.jpg";
 
 export default function Cardve() {
   return (
@@ -20,7 +21,7 @@ export default function Cardve() {
         <CardMedia
           component="img"
           height="270"
-          image="../public/Foto Vale.jpg"
+          image={vale}
           alt="Valeria Evans"
         />
         <CardContent>
