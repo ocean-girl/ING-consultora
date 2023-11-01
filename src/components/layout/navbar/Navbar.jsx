@@ -23,6 +23,7 @@ import Clientex from "../../pages/clientes/Clientex";
 import { Link } from "react-router-dom";
 import Home from "../../pages/Home";
 import { useNavigate } from "react-router-dom";
+import logo from "../../../../public/Logo-ING-small.jpg";
 
 const drawerWidth = 240;
 const navItems = [
@@ -75,11 +76,7 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        <img
-          src="public/Logo-ING-small.jpg"
-          className={styles.name}
-          onClick={() => navigate("/")}
-        />
+        <img src={logo} className={styles.name} onClick={() => navigate("/")} />
       </Typography>
       <Divider />
       <List>
