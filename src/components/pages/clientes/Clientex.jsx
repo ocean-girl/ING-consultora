@@ -7,6 +7,13 @@ import { Container } from "@mui/material";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Title from "../../common/title/Title";
+import ddm from "../../../../public/ddm250.jpg";
+import aromitalia from "../../../../public/aromitalia250.jpg";
+import emeveve from "../../../../public/emeveve250.jpg";
+import entin from "../../../../public/entin250.jpg";
+import envairo from "../../../../public/envairo250.jpg";
+import sicop from "../../../../public/sicop250.jpg";
+import sp from "../../../../public/SP250.jpg";
 
 const responsive = {
   superLargeDesktop: {
@@ -58,25 +65,25 @@ export default function MyImageCarousel() {
           itemClass="carousel-item-padding-50-px"
         >
           <div>
-            <img src="public/aromitalia250.jpg" height={304} alt="" />
+            <img src={envairo} height={304} alt="" />
           </div>
           <div>
-            <img src="public/ddm250.jpg" height={304} alt="" />
+            <img src={entin} height={304} alt="" />
           </div>
           <div>
-            <img src="public/emeveve250.jpg" height={304} alt="" />
+            <img src={aromitalia} height={304} alt="" />
           </div>
           <div>
-            <img src="public/entin250.jpg" height={304} alt="" />
+            <img src={sicop} height={304} alt="" />
           </div>
           <div>
-            <img src="public/envairo250.jpg" height={304} alt="" />
+            <img src={ddm} height={304} alt="" />
           </div>
           <div>
-            <img src="public/sicop250.jpg" height={304} alt="" />
+            <img src={sp} height={304} alt="" />
           </div>
           <div>
-            <img src="public/SP250.jpg" height={304} alt="" />
+            <img src={emeveve} height={304} alt="" />
           </div>
         </Carousel>
       </Container>
