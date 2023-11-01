@@ -10,6 +10,7 @@ import "@fontsource/roboto/700.css";
 import { Box, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import equipo from "../../../../public/background-web-equipo2.jpg";
 
 const Equipo = () => {
   const [isTriggered, setIsTriggered] = useState(false);
@@ -26,7 +27,7 @@ const Equipo = () => {
       ref={ref}
       sx={{
         boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.3)",
-        backgroundImage: "url(./public/background-web-equipo2.jpg)",
+        backgroundImage: `url(${equipo})`,
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
       }}

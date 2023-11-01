@@ -4,6 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import noe from "../../../../../public/Foto Noe.jpg";
 
 export default function Cardnf() {
   return (
@@ -20,7 +21,7 @@ export default function Cardnf() {
         <CardMedia
           component="img"
           height="270"
-          image="../public/Foto Noe.jpg"
+          image={noe}
           alt="Noelia Filippini"
         />
         <CardContent>
