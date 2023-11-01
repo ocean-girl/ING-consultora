@@ -33,31 +33,31 @@ const navItems = [
     Element: Home,
   },
   {
-    id: "1",
+    id: "Nosotros",
     title: "Nosotros",
     path: "/Nosotros",
     Element: Nosotros,
   },
   {
-    id: "2",
+    id: "Servicios",
     title: "Servicios",
     path: "/Servicios",
     Element: Servicios,
   },
   {
-    id: "3",
+    id: "Clientes",
     title: "Clientes",
     path: "/Clientes",
     Element: Clientex,
   },
   {
-    id: "4",
+    id: "Equipo",
     title: "Equipo",
     path: "/Equipo",
     Element: Equipo,
   },
   {
-    id: "5",
+    id: "Contacto",
     title: "Contacto",
     path: "/Contacto",
     Element: Contacto,
@@ -90,7 +90,7 @@ function DrawerAppBar(props) {
             <ListItemButton
               sx={{ textAlign: "center" }}
               component={Link}
-              to={item.path}
+              href={`#${item.id}`}
             >
               <ListItemText primary={item.title} />
             </ListItemButton>
@@ -135,7 +135,7 @@ function DrawerAppBar(props) {
                 key={item.id}
                 sx={{ color: "#fff" }}
                 component={Link}
-                to={item.path}
+                href={`#${item.id}`}
               >
                 {item.title}
               </Button>

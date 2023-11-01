@@ -6,7 +6,7 @@ import Carousel from "../carousel/Carousel";
 
 const Nosotros = () => {
   return (
-    <div>
+    <div id="Nosotros">
       <Carousel />
     </div>
   );

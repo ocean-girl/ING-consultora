@@ -23,49 +23,51 @@ const Equipo = () => {
   }, [inView]);
 
   return (
-    <Box
-      ref={ref}
-      sx={{
-        boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.3)",
-        backgroundImage: `url(${equipo})`,
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-      }}
-    >
-      <Typography
-        variant="h2"
-        fontWeight="fontWeightRegular"
-        textAlign="center"
-        p={6}
-        color="#ffffff"
-        sx={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }}
-        className={`${isTriggered ? "tracking-in-contract-bck" : ""}`}
+    <div id="Equipo">
+      <Box
+        ref={ref}
+        sx={{
+          boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.3)",
+          backgroundImage: `url(${equipo})`,
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed",
+        }}
       >
-        NUESTRO EQUIPO
-      </Typography>
-      <Grid
-        container
-        sx={{ flexGrow: 1 }}
-        pb={6}
-        pl={12}
-        pr={12}
-        spacing={2}
-        justifyContent="space-around"
-      >
-        <Grid item>
-          <Cardve />
+        <Typography
+          variant="h2"
+          fontWeight="fontWeightRegular"
+          textAlign="center"
+          p={6}
+          color="#ffffff"
+          sx={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }}
+          className={`${isTriggered ? "tracking-in-contract-bck" : ""}`}
+        >
+          NUESTRO EQUIPO
+        </Typography>
+        <Grid
+          container
+          sx={{ flexGrow: 1 }}
+          pb={6}
+          pl={12}
+          pr={12}
+          spacing={2}
+          justifyContent="space-around"
+        >
+          <Grid item>
+            <Cardve />
+          </Grid>
+          <Grid item>
+            <Cardnj />
+          </Grid>
+          <Grid item>
+            <Cardvd />
+          </Grid>
+          <Grid item>
+            <Cardnf />
+          </Grid>
         </Grid>
-        <Grid item>
-          <Cardnj />
-        </Grid>
-        <Grid item>
-          <Cardvd />
-        </Grid>
-        <Grid item>
-          <Cardnf />
-        </Grid>
-      </Grid>
-    </Box>
+      </Box>
+    </div>
   );
 };
 

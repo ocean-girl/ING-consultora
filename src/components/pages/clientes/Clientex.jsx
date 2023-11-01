@@ -37,7 +37,7 @@ const responsive = {
 
 export default function MyImageCarousel() {
   return (
-    <div>
+    <div id="Clientes">
       <Container
         sx={{
           maxWidth: "100%",
