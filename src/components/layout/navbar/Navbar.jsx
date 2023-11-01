@@ -76,7 +76,12 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        <img src={logo} className={styles.name} onClick={() => navigate("/")} />
+        <img
+          src={logo}
+          className={styles.name}
+          alt=""
+          onClick={() => navigate("/")}
+        />
       </Typography>
       <Divider />
       <List>
@@ -118,9 +123,10 @@ function DrawerAppBar(props) {
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
             <img
-              src="public/Logo-ING-small.jpg"
+              src={logo}
               className={styles.name}
               onClick={() => navigate("/")}
+              alt=""
             ></img>
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
